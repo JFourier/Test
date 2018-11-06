@@ -22,6 +22,7 @@ public class Test {
                 inputArray[i][j]=scanner.nextInt();//给数组赋值
                 }
         }
+        scanner.close();
         List<Integer> outNum = new ArrayList<Integer>();
         for(int i=0;i<n;i++){
                 if (inputArray[i][1]<t && inputArray[i][2]>t){

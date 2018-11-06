@@ -14,6 +14,7 @@ public class TestForMap {
         for (int i = 0; i<=10 ; i++){
             sum += i;
         }
+        System.out.println(sum);
 //        HashMap<Integer, ArrayList<Integer>> imap = new HashMap<>();
 //        ArrayList<Integer> a = new ArrayList<>();
 //        a.add(1);
