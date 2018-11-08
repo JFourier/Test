@@ -9,9 +9,9 @@ public class ReverseString {
         final String s1 = new StringBuilder(s).reverse().toString();
         return s1;
     }
-    public static void main(String[] args){
-        String s = "hellobans;lala,";
-        String b = reverseString(s);
-        System.out.println(b);
-    }
+//    public static void main(String[] args){
+//        String s = "hellobans;lala,";
+//        String b = reverseString(s);
+//        System.out.println(b);
+//    }
 }
