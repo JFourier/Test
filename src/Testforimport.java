@@ -7,7 +7,8 @@
 public class Testforimport {
         public static void main(String[] args){
             String s = "hellobans;lala,";
-            String b = ReverseString.reverseString(s);
+            String b;
+            b = ReverseString.reverseString(s);
             System.out.println(b);
         }
 }
