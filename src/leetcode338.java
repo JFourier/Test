@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import static java.lang.Math.*;
+
 
 /**
  * 〈〉
@@ -15,7 +15,9 @@ public class leetcode338 {
         int num = scanner.nextInt();
         int[] res;
         res = A.countBits(num);
-
+        for (int i = 0; i<res.length; i++){
+            System.out.print(res[i]);
+        }
     }
     public int[] countBits(int num) {
         int[] res = new int[num + 1];
