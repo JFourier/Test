@@ -7,7 +7,7 @@
  */
 public class devide {
     public static void main(String[] args){
-        int res = divide(23, 4);
+        int res = divide(24, 4);
         System.out.println(res);
     }
     public static int divide(int dividend, int divisor) {
