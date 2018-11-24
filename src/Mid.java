@@ -21,7 +21,7 @@ public class Mid {
         if (input.length%2==1){
             System.out.println(input[(input.length-1)/2]);
         }else{
-            float o =  (float) ((input[(input.length-1)/2])+(input[(input.length)/2]))/2;
+            float o =  ((input[(input.length-1)/2])+(input[(input.length)/2])) /2;
             double f1 = new BigDecimal(o).setScale(100, BigDecimal.ROUND_HALF_UP).doubleValue();
             String s = String.valueOf(f1);
             if(s.indexOf(".") > 0){

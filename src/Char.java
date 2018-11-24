@@ -9,7 +9,7 @@ public class Char {
         String a = "123";
         String c = "123";
 
-        String b = new String("123");
+        String b = "123";
 
         System.out.println(a==b);
         System.out.println(a==c);

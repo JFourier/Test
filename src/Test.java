@@ -29,7 +29,7 @@ public class Test {
                     outNum.add(inputArray[i][0]);
                 }
         }
-        Collections.<Integer>sort(outNum);
+        Collections.sort(outNum);
         for (int i : outNum){
             System.out.println(i);
         }
