@@ -8,7 +8,4 @@ public class newVersionIDE {
         String i = scanner.nextLine();
         String[] h = i.split("");
     }
-
-
-
 }
