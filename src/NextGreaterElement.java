@@ -42,6 +42,7 @@ public class NextGreaterElement {
 
 
     public static int[] nextGreaterElements2(int[] nums) {
+        //存储nums索引值，最后留下的元素为nums最大值的下标
         Deque<Integer> stack = new ArrayDeque<>();
         int len  = nums.length;
         int[] res = new int[len];
