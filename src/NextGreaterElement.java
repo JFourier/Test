@@ -57,9 +57,10 @@ public class NextGreaterElement {
             if (i < len) stack.push(i);
             if (stack.isEmpty()) break;
         }
-
         return res;
     }
+
+
     public static void main(String[] args){
         int[] input = {1,2,1};
         int[] res = nextGreaterElements2(input);
@@ -68,6 +69,4 @@ public class NextGreaterElement {
             System.out.println(x);
         }
     }
-
-
 }

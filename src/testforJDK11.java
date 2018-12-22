@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * 〈〉
  *
@@ -6,7 +10,10 @@
  */
 public class testforJDK11 {
     public static void main(String[] args){
-        var a ="jhdsgfjwge";
-        System.out.println(a);
+        for(int i = 0; i<10; i++){
+            if(i == 5)
+                continue;
+            System.out.println(i);
+        }
     }
 }
