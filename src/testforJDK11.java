@@ -9,11 +9,8 @@ import java.util.Queue;
  * @create 2018/11/14
  */
 public class testforJDK11 {
-    public static void main(String[] args){
-        for(int i = 0; i<10; i++){
-            if(i == 5)
-                continue;
-            System.out.println(i);
-        }
+    public static void main(String[] args) {
+        StringBuilder a = new StringBuilder("asdfghjkl");
+        System.out.println(a.reverse());
     }
 }

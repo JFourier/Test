@@ -129,15 +129,12 @@ public class Tree<AnyType extends Comparable<? super AnyType>>
         if (Node == null || level < 1) {
             return;
         }
-
         if (level == 1) {
             System.out.print(Node.element + "  ");
             return;
         }
-
         // 左子树
         levelOrder(Node.left, level - 1);
-
         // 右子树
         levelOrder(Node.right, level - 1);
     }
