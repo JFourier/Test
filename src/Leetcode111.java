@@ -1,6 +1,3 @@
-//import edu.princeton.cs.algs4.*;
-
-import tree_traversal.TreeNode;
 
 /**
  * @author He.H

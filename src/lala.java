@@ -31,12 +31,12 @@ class Dog extends Animal{
 }
 
     //驱动函数
-    public class lala {
-        public static void main(String[] args) {
-            Animal dog = new Dog();
-            dog.go();
-            dog.eat();
-            ((Dog) dog).run();
-            ((Dog) dog).run();
-        }
+public class lala {
+    public static void main(String[] args) {
+        Animal dog = new Dog();
+        dog.go();
+        dog.eat();
+        ((Dog) dog).run();
+        ((Dog) dog).run();
     }
+}
