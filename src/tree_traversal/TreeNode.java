@@ -1,3 +1,5 @@
+package tree_traversal;
+
 /**
  * simple binary tree
  *
