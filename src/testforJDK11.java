@@ -10,6 +10,10 @@ import java.util.Queue;
  */
 public class testforJDK11 {
     public static void main(String[] args) {
-
+        float sum = 0;
+        for(int i =0;i<100;i++){
+            sum+=0.01;
+        }
+        System.out.println(sum);
     }
 }
