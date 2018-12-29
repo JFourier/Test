@@ -5,7 +5,7 @@
 
 
 public class Leetcode538 {
-    ////以右->根->左的顺序遍历二叉树，将遍历顺序的前一个结点的累加值记录起来，和当前结点相加，得到当前结点的累加值
+    //以右->根->左的顺序遍历二叉树，将遍历顺序的前一个结点的累加值记录起来，和当前结点相加，得到当前结点的累加值
     public int preNum = 0;
     //递归写法
     public TreeNode convertBST(TreeNode root) {
@@ -13,8 +13,9 @@ public class Leetcode538 {
         return root;
     }
     public void unPreOrder(TreeNode root){
-        if(root == null)
+        if(root == null) {
             return;
+        }
         unPreOrder(root.right);
         root.val += preNum;
         preNum = root.val;
