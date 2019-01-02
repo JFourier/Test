@@ -1,4 +1,4 @@
-import static java.lang.System.*;
+//import static java.lang.System.*;
 
 /**
  * 〈〉
@@ -9,10 +9,10 @@ import static java.lang.System.*;
 
 class Animal{
     void go(){
-        out.println("animal go");
+        System.out.println("animal go");
     }
     void eat(){
-        out.println("animal eat");
+        System.out.println("animal eat");
     }
 }
 
@@ -23,10 +23,10 @@ class Dog extends Animal{
     }
     @Override
     void eat (){
-        out.println("dog eat");
+        System.out.println("dog eat");
     }
     void run(){
-        out.println("123");
+        System.out.println("123");
     }
 }
 
