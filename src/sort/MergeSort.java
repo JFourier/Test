@@ -7,7 +7,7 @@ package sort;
 
 
 public class MergeSort {
-    public  void mergeSort(int[] a, int left, int right) {
+    public void mergeSort(int[] a, int left, int right) {
         int t = 1;// 每组元素个数
         int size = right - left + 1;
         while (t < size) {
