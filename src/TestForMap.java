@@ -10,18 +10,15 @@ import java.util.HashMap;
  */
 public class TestForMap {
     public static void main(String[] args){
-        int sum = 0;
-        for (int i = 0; i<=10 ; i++){
-            sum += i;
-        }
-        System.out.println(sum);
-//        HashMap<Integer, ArrayList<Integer>> imap = new HashMap<>();
-//        ArrayList<Integer> a = new ArrayList<>();
-//        a.add(1);
-//        a.add(2);
-//        imap.put(1,a);
-//        imap.get(1).add(3);
-//        System.out.println(imap.get(1));
-
+//        int sum = 0;
+//        for (int i = 0; i<=10 ; i++){
+//            sum += i;
+//        }
+//        System.out.println(sum);
+        HashMap<Integer, Integer> imap = new HashMap<>();
+        imap.put(1,2);
+        imap.put(2,3);
+        int a = imap.get(1);
+        int b = imap.getOrDefault(3,9);
     }
 }
