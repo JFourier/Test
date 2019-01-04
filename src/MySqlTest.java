@@ -43,9 +43,9 @@ public class MySqlTest {
             String Code;
             String Name;
             while(rs.next()){
-                //获取‘学号’这列数据
+                //获取‘code’这列数据
                 Code=rs.getString("Code");
-                //获取‘姓名’这列数据
+                //获取‘name’这列数据
                 Name=rs.getString("Name");
                 //输出结果
                 System.out.println(Code+"\t"+Name);

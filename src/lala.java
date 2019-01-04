@@ -1,10 +1,10 @@
 //import static java.lang.System.*;
 
 /**
- * 〈〉
+ *
  *
  * @author He.H
- * @create 2018/9/4
+ * @date 2018/9/4
  */
 
 class Animal{
