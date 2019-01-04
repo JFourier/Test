@@ -10,7 +10,7 @@ import java.util.Set;
  **/
 
 
-public class ReplaceWords {
+public class Leetcode648 {
 //    public String replaceWords(List<String> dict, String sentence) {
 //        Set<String> set = new HashSet<>(dict);
 //        StringBuilder sb = new StringBuilder();
