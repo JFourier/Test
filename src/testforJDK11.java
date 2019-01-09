@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import static java.lang.Integer.bitCount;
+
 /**
  * 〈〉
  *
@@ -10,10 +12,9 @@ import java.util.Queue;
  */
 public class testforJDK11 {
     public static void main(String[] args) {
-        float sum = 0;
-        for(int i =0;i<100;i++){
-            sum+=0.01;
-        }
-        System.out.println(sum);
+        int n = -5;
+        int a = Math.abs(n);
+        int c = bitCount(n);
+        System.out.println(c);
     }
 }
