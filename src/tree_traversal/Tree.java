@@ -87,10 +87,8 @@ public class Tree<AnyType extends Comparable<? super AnyType>>
      * 中序遍历
      * 递归
      */
-    public void midOrder(BinaryNode<AnyType> Node)
-    {
-        if (Node != null)
-        {
+    public void midOrder(BinaryNode<AnyType> Node) {
+        if (Node != null) {
             midOrder(Node.left);
             System.out.print(Node.element + " ");
             midOrder(Node.right);
@@ -159,8 +157,7 @@ public class Tree<AnyType extends Comparable<? super AnyType>>
      * 前序遍历
      * 非递归
      */
-    public void preOrder1(BinaryNode<AnyType> Node)
-    {
+    public void preOrder1(BinaryNode<AnyType> Node) {
         Stack<BinaryNode> stack = new Stack<>();
         while(Node != null || !stack.empty())
         {
