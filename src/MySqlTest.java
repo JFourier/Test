@@ -3,7 +3,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 import java.sql.ResultSet;
-
 /**
  * @author He.H
  * @date 2019/1/3 15:48
@@ -57,15 +56,10 @@ public class MySqlTest {
             //数据库驱动类异常处理
             System.out.println("数据库驱动加载失败！");
             e.printStackTrace();
-        }
-        catch(SQLException e1){
+        } catch(Exception e1){
             //数据库连接失败异常处理
             e1.printStackTrace();
-        }
-        catch(Exception e2){
-            e2.printStackTrace();
-        }
-        finally{
+        } finally {
             System.out.println("-------------------------------");
             System.out.println("数据库数据获取成功！");
         }
