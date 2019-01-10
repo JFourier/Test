@@ -4,7 +4,7 @@ package polymorphism;
  * 〈〉
  *
  * @author He.H
- * @create 2018/9/4
+ * @Time 2018/9/4
  */
 public class A {
     public String show(D obj){
