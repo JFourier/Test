@@ -14,7 +14,7 @@ public class MySqlTest {
         // 加载数据库驱动  com.mysql.jdbc.Driver
         String driver = "com.mysql.cj.jdbc.Driver";
         // 获取mysql连接地址
-        String url = "jdbc:mysql://localhost:3306/world?&useSSL=false&serverTimezone=UTC";
+        String url = "jdbc:mysql://localhost:3306/world?&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true";
         // 数据名称
         String username = "root";
         // 数据库密码
