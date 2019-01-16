@@ -1,5 +1,6 @@
 import java.util.*;
 
+
 /**
  * @author He.H
  * @date 2018/12/18 9:07
@@ -7,7 +8,7 @@ import java.util.*;
  **/
 
 
-public class NextGreaterElement {
+public class Leetcode503 {
     public static int[] nextGreaterElements(int[] nums) {
         List<Integer> result = new ArrayList<>();
         int flag = 0;
@@ -64,8 +65,7 @@ public class NextGreaterElement {
     public static void main(String[] args){
         int[] input = {1,2,1};
         int[] res = nextGreaterElements2(input);
-        for (int x:res
-             ) {
+        for (int x : res) {
             System.out.println(x);
         }
     }
