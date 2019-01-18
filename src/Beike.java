@@ -4,7 +4,7 @@ import java.util.Scanner;
  * 〈〉
  *
  * @author He.H
- * @create 2018/10/15
+ * @date 2018/10/15
  */
 public class Beike {
     public static void main(String[] args){

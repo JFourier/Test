@@ -4,7 +4,7 @@ import java.util.Scanner;
  * 〈〉
  *
  * @author He.H
- * @create 2018/9/12
+ * @date 2018/9/12
  */
 public class BigMultiply {
     /**
