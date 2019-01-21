@@ -5,5 +5,6 @@ public class newVersionIDE {
         String s = "34thjahejt";
         char[] arr = s.toCharArray();
         System.out.println(arr[0]);
+        System.out.println("fdshjkjfhgkjdhg");
     }
 }

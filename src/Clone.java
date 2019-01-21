@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * 〈已知k，k=x1*x2...*xn，求min(x1+x2+...+xn+n)〉
+ * &#x3008;&#x5df2;&#x77e5;k&#xff0c;k=x1*x2...*xn&#xff0c;&#x6c42;min(x1+x2+...+xn+n)&#x3009;
  *
  * @author He.H
- * @create 2018/9/29
+ * @date 2018/9/29
  */
 public class Clone {
     public static void main(String[] args){
@@ -38,7 +38,7 @@ public class Clone {
         result = sum-count2/2;
         System.out.println(result);
     }
-    public static boolean isPrime(int num){
+    private static boolean isPrime(int num){
         boolean isprime = true;
         int len = num/2;
         for(int i =2; i<len; i++){
