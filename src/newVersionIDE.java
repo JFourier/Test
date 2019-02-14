@@ -1,9 +1,8 @@
 
 public class newVersionIDE {
     public static void main(String[] args){
-        String s = "34thjahejt";
-        char[] arr = s.toCharArray();
-        System.out.println(arr[0]);
-        System.out.println("fdshjkjfhgkjdhg");
+        int a = 12;
+        System.out.println(String.valueOf(a));
+        System.out.println(new StringBuffer(a+"").reverse().toString());
     }
 }

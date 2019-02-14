@@ -11,26 +11,26 @@ import java.util.List;
 
 public class Leetcode51 {
     public List<List<String>> solveNQueens(int n) {
-        List<List<String>> res = new ArrayList<List<String>>();
+        List<List<String>> res = new ArrayList<>();
         int[] queenList = new int[n]; //第i个位置存放的数表示row行时，Q的列
-        placeQueen(queenList, 0, n, res);//在第0行放Q
+        placeQueen(queenList, 0, n, res); //在第0行放Q
         return res;
     }
 
     private void placeQueen(int[] queenList, int row, int n, List<List<String>> res) {
         //如果已经填满，就生成结果
         if (row == n) {
-            ArrayList<String> list = new ArrayList<String>();
+            ArrayList<String> list = new ArrayList<>();
             for (int i = 0; i < n; i++) {
-                String str = "";
+                StringBuilder str = new StringBuilder();
                 for (int col = 0; col < n; col++){
                     if(queenList[i] == col) {
-                        str += "Q";
+                        str.append("Q");
                     } else {
-                        str += ".";
+                        str.append(".");
                     }
                 }
-                list.add(str);
+                list.add(str.toString());
             }
             res.add(list);
         }
@@ -60,7 +60,7 @@ public class Leetcode51 {
 }
 
 class GIest{
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Leetcode51 test = new Leetcode51();
         List<List<String>> result = test.solveNQueens(4);
         System.out.println(result);

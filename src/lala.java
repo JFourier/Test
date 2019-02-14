@@ -7,17 +7,17 @@
  * @date 2018/9/4
  */
 
-class Animal{
-    void go(){
+class Animal {
+    void go() {
         System.out.println("animal go");
     }
-    void eat(){
+    void eat() {
         System.out.println("animal eat");
     }
 }
 
-class Dog extends Animal{
-    void go(){
+class Dog extends Animal {
+    void go() {
         //调用父类方法
         super.go();
     }
