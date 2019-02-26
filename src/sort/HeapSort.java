@@ -23,7 +23,7 @@ public class HeapSort {
         data[i]=data[j];
         data[j]=tmp;
     }
-    //对data数组从0到lastIndex建大顶堆
+    //对data数组从0到lastIndex建大顶堆,即堆顶元素最大
     private void buildMaxHeap(int[] data, int lastIndex) {
         //从lastIndex处节点（最后一个节点）的父节点开始
         for(int i=(lastIndex-1)/2;i>=0;i--){
@@ -52,5 +52,18 @@ public class HeapSort {
                 }
             }
         }
+    }
+}
+
+class Main {
+    public static void main(String[] args){
+        HeapSort test = new HeapSort();
+        int[] a = {3,1,5,2,7,0};
+        test.heapSort(a);
+        for (int tmp: a
+             ) {
+            System.out.println(tmp);
+        }
+
     }
 }
