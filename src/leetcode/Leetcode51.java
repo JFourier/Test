@@ -65,7 +65,7 @@ class GIest{
     public static void main(String[] args) {
         long STARTTIME = System.currentTimeMillis();
         Leetcode51 test = new Leetcode51();
-        List<List<String>> result = test.solveNQueens(8);
+        List<List<String>> result = test.solveNQueens(4);
         long ENDTIME = System.currentTimeMillis();
         System.out.println(result.size());
         System.out.println((ENDTIME- STARTTIME)+"ms");
