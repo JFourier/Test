@@ -8,9 +8,11 @@ public class moveZeros {
     public static void main(String[] args){
         int[] a = {1, 0, 4, 0, 6};
         moveZeroes(a);
-        for (int item:a) {
-            System.out.println(item);
-        }
+//        for (int item:a) {
+//            //System.out.println(item);
+//        }
+        int res = 'A'-'z';
+        System.out.println(res);
     }
     public static void moveZeroes(int[] nums) {
         int temp;

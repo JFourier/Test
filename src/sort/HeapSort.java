@@ -30,7 +30,7 @@ public class HeapSort {
             //k保存正在判断的节点
             int k=i;
             //如果当前k节点的子节点存在
-            while(k*2+1<=lastIndex){
+            while(k*2+1<=lastIndex) {
                 //k节点的左子节点的索引
                 int biggerIndex=2*k+1;
                 //如果biggerIndex小于lastIndex，即biggerIndex+1代表的k节点的右子节点存在
@@ -58,7 +58,7 @@ public class HeapSort {
 class Main {
     public static void main(String[] args){
         HeapSort test = new HeapSort();
-        int[] a = {3,1,5,2,7,0};
+        int[] a = {6,1,3,5,4,7,9};
         test.heapSort(a);
         for (int tmp: a
              ) {

@@ -117,9 +117,7 @@ public class Tree<AnyType extends Comparable<? super AnyType>>
         if (Node == null) {
             return;
         }
-
         int depth = depth(Node);
-
         for (int i = 1; i <= depth; i++) {
             levelOrder(Node, i);
         }
