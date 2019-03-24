@@ -1,6 +1,3 @@
-import com.sun.xml.bind.v2.schemagen.xmlschema.List;
-import polymorphism.C;
-
 import java.util.*;
 
 /**

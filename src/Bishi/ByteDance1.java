@@ -37,8 +37,9 @@ public class ByteDance1 implements Runnable {
             sb = new StringBuilder();
             String source = cin.nextLine();
 
-            //pIsDouble表示当前位与前一位是否相同
-            //ppIsDouble表示当前位的前两位是否相同
+            //pIsDouble表示当前位(程序中的pre)与前一位是否相同，
+            //       若为true，当pre与charat(j)相同时则跳过
+            //ppIsDouble表示当前位(pre)的前两位是否相同,若位true，当pre==charat(j)时则跳过
             boolean pIsDouble = false, ppIsDouble = false;
             int n = source.length();
             char pre = ' ';
@@ -62,8 +63,4 @@ public class ByteDance1 implements Runnable {
             System.out.println(sb);
         }
     }
-
-
-
-
 }

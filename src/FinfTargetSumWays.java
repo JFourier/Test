@@ -1,5 +1,3 @@
-import org.apache.commons.math3.util.Pair;
-
 /**
  * leetcoe  494
  *
