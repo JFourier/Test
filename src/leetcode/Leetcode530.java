@@ -6,7 +6,7 @@ package leetcode;
  **/
 
 
-public class Leetocde530 {
+public class Leetcode530 {
     int min=Integer.MAX_VALUE;
     TreeNode prenode=null;
     public int getMinimumDifference(TreeNode root) {

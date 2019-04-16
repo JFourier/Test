@@ -18,13 +18,16 @@ public class WangYi {
     }
     public static int solve(double x, double y) {
         int res = 0;
+        double k = y/x;
         for (double i = 0; i < x; i++) {
             for (double j = 0; j < y ; j++) {
+                if (k*x>y+1 || k*(x+1)<y) {
+                    continue;
+                }
                 if (check(i,j,y/x));
                 res++;
             }
         }
-
         return res;
     }
 

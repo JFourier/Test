@@ -34,4 +34,9 @@ public class BucketSort {
         }
         //System.out.println(bucketArr.toString());
     }
+
+    public static void main(String[] args) {
+
+    }
+
 }

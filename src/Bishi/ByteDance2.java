@@ -8,7 +8,7 @@ import java.util.Scanner;
  **/
 
 
-public class ByteDance2 implements Runnable{
+public class ByteDance2 implements Runnable {
     /**
      * 设dp[i]表示给i发的最小奖品，首先扫一遍数组，将两侧分数均比中间高的位置，奖品数置1，
      * 然后再扫一遍对没有赋值的位置进行递归记忆化搜索。复杂度O(N)

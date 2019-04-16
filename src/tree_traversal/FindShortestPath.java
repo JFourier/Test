@@ -37,7 +37,7 @@ public class FindShortestPath {
         if (!bLeafIsFound) {
             path.pop();
         }
-        return path1 == null ? null : path1;
+        return path1;
     }
 
     public String printPath(Stack<Integer> path){
@@ -69,8 +69,8 @@ public class FindShortestPath {
     }
 
     public void findPathOfTwoNode(TreeNode root,TreeNode p, TreeNode q){
-        Stack<Integer> path1 = new Stack<Integer>();
-        Stack<Integer> path2 = new Stack<Integer>();
+        Stack<Integer> path1 = new Stack<>();
+        Stack<Integer> path2 = new Stack<>();
         //寻找两个路径的交点，即最小公共祖先
         TreeNode lca = lowestCommonAncestor(root, p, q);
         //得到p节点的路径
@@ -86,7 +86,7 @@ public class FindShortestPath {
         String s3 = s1 + "->" + split[0];
         for (int i = 1; i < split.length; i++) {
             if (Integer.parseInt(split[i]) != lca.val) {
-                s3 +="->" + split[i];
+                s3 += "->" + split[i];
             }
         }
         System.out.println("归并后的路径为：" + s3);
@@ -112,7 +112,6 @@ public class FindShortestPath {
 
         FindShortestPath findShortestPath = new FindShortestPath();
         findShortestPath.findPathOfTwoNode(node1, node7, node3);
-
     }
 }
 

@@ -43,17 +43,11 @@ public class QuickSort {
             while (end>start && nums[end]>=key)
                 end--;
             if(nums[end] <= key){
-//                int temp = nums[end];
-//                nums[end] = nums[start];
-//                nums[start] = temp;
                 swap(nums,end,start);
             }
             while (end>start && nums[start]<=key)
                 start++;
             if(nums[start] >= key){
-//                int temp = nums[start];
-//                nums[start] = nums[end];
-//                nums[end] = temp;
                 swap(nums,end,start);
             }
         }

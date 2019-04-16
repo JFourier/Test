@@ -1,4 +1,6 @@
 import edu.princeton.cs.algs4.Graph;
+import org.junit.Test;
+
 
 /**
  * @author He.H
@@ -7,5 +9,11 @@ import edu.princeton.cs.algs4.Graph;
 
 
 public class GraphTest {
+
+
+    @Test
+    public void help(){
+        System.out.println("ssbcd");
+    }
 
 }
