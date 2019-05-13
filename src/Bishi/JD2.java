@@ -1,7 +1,7 @@
 package Bishi;
 
 
-import java.nio.channels.NonReadableChannelException;
+
 import java.util.*;
 
 /**
@@ -110,7 +110,7 @@ class NTreeNode {
 
     public NTreeNode(int _val) {
         val = _val;
-        children = new ArrayList<NTreeNode>();
+        children = new ArrayList<>();
     }
 
     public NTreeNode(int _val,ArrayList<NTreeNode> _children) {
