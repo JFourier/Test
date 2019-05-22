@@ -13,7 +13,9 @@ public class Leetcode232 {
         MyQueue obj = new MyQueue();
         obj.push(1);
         obj.push(2);
+        obj.push(3);
         System.out.println(obj.peek());
+        System.out.println(obj.pop());
         System.out.println(obj.pop());
         System.out.println(obj.peek());
     }

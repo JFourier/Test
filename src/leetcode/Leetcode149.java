@@ -10,6 +10,16 @@ import java.util.Map;
 
 
 public class Leetcode149 {
+    public static void main(String[] args) {
+        int[][] in = {{1, 1}, {1, 2}, {2, 3}, {2, 2}, {3, 3}};
+        Solve149 solve1 = new Solve149();
+        int res = solve1.maxPoints(in);
+        System.out.println(res);
+    }
+}
+
+
+class Solve149 {
     public int maxPoints(int[][] points) {
         if(points.length <= 2)
             return points.length;
