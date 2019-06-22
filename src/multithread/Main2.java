@@ -30,7 +30,7 @@ class Thread2 implements Runnable{
 public class Main2 {
 
     public static void main(String[] args) {
-        new Thread(new Thread2("C")).start();
+        new Thread(new Thread2("C")).start();//把实现了Runnable接口的子类对象作为参数传递给Thread类的构造方法
         new Thread(new Thread2("D")).start();
     }
 }

@@ -36,8 +36,8 @@ public class Leetcode46 {
 
     public static void main(String[] args){
         Leetcode46 m = new Leetcode46();
-        int[] tes = {1, 2, 3};
+        int[] tes = {1, 2, 3, 4};
         List<List<Integer>> res = m.permute(tes);
-        System.out.println(res);
+        System.out.println(res.size());
     }
 }
