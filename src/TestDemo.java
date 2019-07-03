@@ -1,4 +1,4 @@
-import java.util.LinkedList;
+import java.util.Arrays;
 
 /**
  * @author He.H
@@ -8,8 +8,7 @@ import java.util.LinkedList;
 
 public class TestDemo {
     public static void main(String[] args){
-        for (int i = 0; i!=3 && i<8; i++) {
-            System.out.println(i);
-        }
+        int[] a = {5,3,1,7,0};
+        Arrays.sort(a);
     }
 }
