@@ -36,7 +36,7 @@ public class ArrayList100W {
         long end = System.currentTimeMillis();
         System.out.println("线程数量1，线性遍历，花费的时间:"+(end-start)+" milliseconds, "+"type等于2的个数有:"+numberEquals2);
 
-        //第二种方法，用100个线程来分别跑，用来计数的变量是原子变量
+        //第二种方法，用1000个线程来分别跑，用来计数的变量是原子变量
         start = System.currentTimeMillis();
         AtomicInteger atomicNumberEquals2 = new AtomicInteger(0);
         ExecutorService pool = Executors.newFixedThreadPool(THREAD_NUMBER);
@@ -58,7 +58,7 @@ public class ArrayList100W {
         end = System.currentTimeMillis();
         System.out.println("线程数量:"+THREAD_NUMBER+"(原子变量)花费的时间:"+(end-start)+" milliseconds, "+"type等于2的个数有:"+atomicNumberEquals2.get());
 
-        //第三种方法，用100个线程来分别跑，使用数组来计数
+        //第三种方法，用1000个线程来分别跑，使用数组来计数
         start = System.currentTimeMillis();
         int result[] = new int[THREAD_NUMBER];
         ExecutorService pool2 = Executors.newFixedThreadPool(THREAD_NUMBER);
