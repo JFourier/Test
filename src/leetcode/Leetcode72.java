@@ -22,6 +22,7 @@ public class Leetcode72 {
                 }else if(word1.charAt(i-1) == word2.charAt(j-1)){
                     steps[i][j] = steps[i-1][j-1];
                 }else{
+                    //dp[i-1][j-1] 表示替换操作，dp[i-1][j] 表示删除操作，dp[i][j-1] 表示插入操作。
                     steps[i][j] = Math.min(Math.min(steps[i][j-1]+1, steps[i-1][j-1]+1), steps[i-1][j]+1);
                 }
 

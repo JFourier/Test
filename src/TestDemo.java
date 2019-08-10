@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.concurrent.ConcurrentSkipListSet;
 
 /**
  * @author He.H
@@ -8,7 +8,6 @@ import java.util.Arrays;
 
 public class TestDemo {
     public static void main(String[] args){
-        int[] a = {5,3,1,7,0};
-        Arrays.sort(a);
+        ConcurrentSkipListSet a;
     }
 }
