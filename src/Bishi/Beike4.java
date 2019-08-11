@@ -10,6 +10,25 @@ import java.util.Scanner;
 
 public class Beike4 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        long[] nums = new long[n];
+        for (int i = 0; i < n; i++) {
+            nums[i] = sc.nextLong();
+        }
+
+        long[] ans = new long[2];
+        long res = Long.MAX_VALUE;
+        for (int i = 0; i < n-1; i++) {
+            long temp = Math.abs(nums[i]-nums[i+1]);
+            if (temp<res){
+                ans[0] = nums[i];
+                ans[1] = nums[i+1];
+                res = temp;
+            }
+        }
+        System.out.print(ans[0]);
+        System.out.print(" ");
+        System.out.println(ans[1]);
     }
 }

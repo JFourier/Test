@@ -1,5 +1,6 @@
 package Bishi;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -12,6 +13,38 @@ import java.util.Scanner;
 
 public class Beike2 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        double[] nums = new double[n];
+        for (int i = 0; i < n; i++) {
+            nums[i] = sc.nextDouble();
+        }
+        System.out.println(solve(nums));
+    }
+
+    public static int solve(double[] nums){
+        int len = nums.length;
+        Arrays.sort(nums);
+        int res = 0;
+        for (int i = 0; i < len; i++) {
+            res += cnt(nums, i);
+        }
+        return res;
+    }
+
+    public static int cnt(double[] nums, int index) {
+        int res = 0;
+        if (index == nums.length-1) {
+            return res;
+        }
+
+        for (int i = index+1; i < nums.length; i++) {
+            if ((nums[index]>= nums[i]*0.9)) {
+                res++;
+            } else {
+                break;
+            }
+        }
+        return res;
     }
 }

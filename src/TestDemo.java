@@ -1,5 +1,3 @@
-import java.util.concurrent.ConcurrentSkipListSet;
-
 /**
  * @author He.H
  * @date 2019/1/2 14:34
@@ -8,6 +6,7 @@ import java.util.concurrent.ConcurrentSkipListSet;
 
 public class TestDemo {
     public static void main(String[] args){
-        ConcurrentSkipListSet a;
+        int[] nums = {0,2,4,5,6,7};
+        System.out.println(59/60);
     }
 }
