@@ -12,22 +12,6 @@ import java.util.Scanner;
 // 请问，给定的字符串数组是否能通过更换数组中元素的顺序，从而首尾相连，形成一个环。
 
 public class PDD2 {
-//    public static void main(String[] args) {
-//        Scanner sc=new Scanner(System.in);
-//        String[] A=sc.nextLine().split(" ");
-//        Boolean flag=true;
-//        for(int i=0;i<A.length-1;i++){
-//            if(A[i].charAt(A[i].length()-1)!=A[i+1].charAt(0)){
-//                flag=false;
-//            }
-//        }
-//        if(A[A.length-1].charAt(A[A.length-1].length()-1)!=A[0].charAt(0)){
-//            flag=false;
-//        }
-//        System.out.println(flag);
-//    }
-
-
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         while(in.hasNext()) {
@@ -65,8 +49,10 @@ public class PDD2 {
             }
             isUsed[i] = true;
             flag = backtrack(words, curList, isUsed);
+            //还原
             isUsed[i] = false;
             curList.remove(curList.size()-1);
+            //已完成
             if(flag) {
                 break;
             }

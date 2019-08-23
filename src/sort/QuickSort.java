@@ -84,13 +84,10 @@ public class QuickSort {
         //最后将基准为与i和j相等位置的数字交换
         arr[low] = arr[i];//或 arr[low] = arr[j];
         arr[i] = temp;//或 arr[j] = temp;
-
-
         //i=j
         //这时  左半数组<(i或j所在索引的数)<右半数组
         //也就是说(i或j所在索引的数)已经确定排序位置， 所以就不用再排序了，
         // 只要用相同的方法 分别处理  左右数组就可以了
-
         //递归调用左半数组
         quickSort1(arr, low, j-1);
         //递归调用右半数组

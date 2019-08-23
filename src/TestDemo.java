@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /**
  * @author He.H
  * @date 2019/1/2 14:34
@@ -5,8 +8,23 @@
 
 
 public class TestDemo {
-    public static void main(String[] args){
-        int[] nums = {0,2,4,5,6,7};
-        System.out.println(59/60);
+    static Scanner input;
+    public static void main(String[] args) {
+        input = new Scanner(System.in);
+        int n = input.nextInt();
+        ArrayList<Integer> res = new ArrayList<>();
+        for (int i = 0; i < n ; i++) {
+            solve(res);
+        }
+
+        for(int i: res){
+            System.out.println(i);
+        }
+    }
+
+    public static void solve(ArrayList<Integer> res) {
+        int a = input.nextInt();
+        res.add(a);
+        res.add(input.nextInt());
     }
 }
