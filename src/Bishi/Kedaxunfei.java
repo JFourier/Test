@@ -1,8 +1,6 @@
 package Bishi;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.Scanner;
 
 /**
  * @author He.H
@@ -12,20 +10,41 @@ import java.util.List;
 
 public class Kedaxunfei {
     public static void main(String[] args) {
-        StringBuffer input = new StringBuffer("爱讯飞789swr1wwen34ifly65tek");
-        numbers(input);
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.nextLine();
+        String[] strings = s.split("\\S+");
+        String s1 = strings[0];
+        String s2 = strings[1];
+        String ans = add(s1, s2);
+        System.out.println(ans);
     }
+    public static String add(String s1, String s2) {
 
-    public static void numbers(StringBuffer s) {
-        List<Character> numbers = new ArrayList<Character>();
-        for (int i = 0; i != s.length(); i++) {
-            if (('0' <= s.charAt(i)) && (s.charAt(i) <= '9')) {
-                numbers.add(s.charAt(i));
+        StringBuffer result = new StringBuffer();
+        s1 = new StringBuffer(s1).reverse().toString();
+        s2 = new StringBuffer(s2).reverse().toString();
+        int les1 = s1.length();
+        int les2 = s2.length();
+        int maxLen = les1 > les2 ? les1 : les2;
+        int c = 0;
+        if (les1 < les2) {
+            for (int i = les1; i < les2; i++) {
+                s1 += "0";
+            }
+        } else if (les1 > les2) {
+            for (int i = les2; i < les1; i++) {
+                s2 += "0";
             }
         }
-        Collections.sort(numbers);
-        for (int i = 0; i != numbers.size(); i++) {
-            System.out.print(numbers.get(i));
+        for (int i = 0; i < maxLen; i++) {
+            int nSum = Integer.parseInt(s1.charAt(i) + "") + Integer.parseInt(s2.charAt(i) + "") + c;
+            int ap = nSum % 10;
+            result.append(ap);
+            c = nSum / 10;
         }
+        if (c > 0) {
+            result.append(c);
+        }
+        return result.reverse().toString();
     }
 }

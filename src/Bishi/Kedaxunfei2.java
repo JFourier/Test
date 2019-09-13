@@ -10,23 +10,30 @@ import java.util.Scanner;
 
 public class Kedaxunfei2 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-
-    }
-    private static int solve(int[] input, int start, int end, int searchKey){
-        if (start <= end) {
-            int middle =  (start+end)/2;
-            if (searchKey == input[middle]) {
-                return middle;
-            } else if (searchKey < input[middle]) {
-                return solve(input, start, middle - 1, searchKey);
-            } else {
-                return solve(input, middle + 1, end, searchKey);
+        Scanner scanner = new Scanner(System.in);
+        String string = scanner.next();
+        int low=0;
+        int high=0;
+        int count=0;
+        int len=string.length();
+        char c;
+        StringBuilder sb = new StringBuilder();
+        while (low < len) {
+            high=low;
+            c = string.charAt(low);
+            while ((high < len) && (string.charAt(high) == c)) {
+                high++;
             }
-        } else {
-            return -1;
-        }
-    }
+            count=high-low;
+            if (count > 1) {
+                sb.append(count);
+                sb.append(c);
+            } else {
+                sb.append(c);
+            }
 
+            low=high;
+        }
+        System.out.println(sb.toString());
+    }
 }

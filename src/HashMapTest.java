@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Stack;
 
 /**
@@ -11,5 +12,6 @@ public class HashMapTest {
     public static void main(String[] args){
         HashMap<Integer, Integer> map = new HashMap(10, (float) 0.85);
         Stack<Integer> tmp = new Stack<>();
+        LinkedHashMap<Integer, Integer> tmp1 = new LinkedHashMap<>();
     }
 }

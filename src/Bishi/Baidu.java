@@ -1,5 +1,7 @@
 package Bishi;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 /**
@@ -10,35 +12,38 @@ import java.util.Scanner;
 
 public class Baidu {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String A = scanner.nextLine();
-        String B = scanner.nextLine();
-        int Q = scanner.nextInt();
-        int[][] in = new int[Q][2];
-        for (int i = 0; i < Q; i++) {
-            for (int j = 0; j < 2; j++) {
-                in[i][j] = scanner.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int[] nums = new int[n];
+        for (int i = 0; i < n; i++) {
+            nums[i] = sc.nextInt();
+        }
+        int ans = solve(nums);
+        System.out.println(ans);
+    }
+
+    public static int solve(int[] nums) {
+        HashMap<Integer, ArrayList<Integer>> map = new HashMap<>();
+        for (int i : nums) {
+            if (!map.containsKey(i)) {
+                ArrayList<Integer> tmp = new ArrayList<>();
+                tmp.add(i);
+                map.put(i, tmp);
+            } else {
+                map.get(i).add(i);
             }
         }
-        int[] res = new int[Q];
-        for (int i = 0; i < Q; i++) {
-            res[i] = solve(A,B,in[i][0],in[i][1]);
-        }
-        for (int i: res){
-            System.out.println(i);
-        }
-    }
-    public static int solve(String A, String B, int l, int r) {
-        int res = 0;
-        String tmp = A.substring(l-1,r);
-        for (int i = 0; i <= tmp.length()-B.length(); i++) {
-            if(helper(tmp.substring(i,i+B.length()),B)){
-                res++;
+        int ans = 0;
+        for (int key : map.keySet()) {
+            if (map.get(key).size()%2 == 0) {
+                ans += map.get(key).size()/2;
+            } else {
+                ans += map.get(key).size()/2 + 1;
             }
         }
-        return res;
+        return ans;
     }
-    public static boolean helper(String A, String B){
-        return (A.equals(B));
-    }
+
+
 }

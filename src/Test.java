@@ -1,9 +1,6 @@
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
-
-import static java.util.Collections.*;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 〈〉
@@ -13,26 +10,27 @@ import static java.util.Collections.*;
  */
 public class Test {
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int t = scanner.nextInt();
-        int [][] inputArray = new int[n][3];
-        for(int i=0;i<n;i++){
-            for(int j=0;j<3;j++){
-                inputArray[i][j]=scanner.nextInt();//给数组赋值
-                }
-        }
-        scanner.close();
-        List<Integer> outNum = new ArrayList<Integer>();
-        for(int i=0;i<n;i++){
-                if (inputArray[i][1]<t && inputArray[i][2]>t){
-                    outNum.add(inputArray[i][0]);
-                }
-        }
-        Collections.sort(outNum);
-        for (int i : outNum){
+        int[] nums = new int[] {1,2,3,4,5};
+        int target = 5;
+        ArrayList<Integer> res = solve(nums, target);
+
+        for(int i : res) {
             System.out.println(i);
         }
+    }
+    public static ArrayList<Integer> solve(int[] nums, int target) {
+        ArrayList<Integer> res = new ArrayList<>();
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int diff = target - nums[i];
+            if (map.containsKey(nums[i])) {
+                res.add(map.get(nums[i]));
+                res.add(i);
+                break;
+            }
+            map.put(diff, i);
+        }
+        return res;
     }
 }
 
