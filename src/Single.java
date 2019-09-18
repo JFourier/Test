@@ -9,6 +9,7 @@ public class Single extends Object{
 
     private Single(){
     }
+
     public static Single getInstance(){
         if(instance == null){
             synchronized(Single.class){
