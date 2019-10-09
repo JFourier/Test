@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+
 /**
  * &#x3008;&#x3009;
  *
@@ -8,19 +8,8 @@ import java.util.List;
  */
 public class leettest {
     public static void main(String[] args){
-//        List<String> t = new ArrayList<>();
-//        t.add(" ");
-//        t.add("");
-//        System.out.println(t.size());
-//        String s = "aaaa";
-//
-//        String[] tags = s.split("");
-//        System.out.println(tags);
-//        System.out.println(s.length());
-        char a = 'A';
-        char b = 'B';
-        System.out.println(a-b);
+
+        HashMap<Integer, Integer> map = new HashMap<>();
 
     }
-
 }

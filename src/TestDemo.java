@@ -1,6 +1,3 @@
-import java.util.Scanner;
-import java.util.concurrent.Executors;
-
 /**
  * @author He.H
  * @date 2019/1/2 14:34
@@ -9,9 +6,8 @@ import java.util.concurrent.Executors;
 
 public class TestDemo {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        System.out.println(a);
-        Executors.newCachedThreadPool();
+        int i = 1;
+        int res = (++i) + (i++);
+        System.out.println(res);
     }
 }
