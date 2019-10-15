@@ -12,7 +12,7 @@ import static java.util.stream.Collectors.*;
  **/
 
 
-public class Person {
+public class  Person {
 
     private String firstName, lastName, job, gender;
     private int salary, age;
