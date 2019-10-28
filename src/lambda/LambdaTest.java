@@ -1,8 +1,8 @@
 package lambda;
 
-import java.util.*;
 import javax.swing.*;
-import javax.swing.Timer;
+import java.util.Arrays;
+import java.util.Date;
 
 /**
  * @author He.H
